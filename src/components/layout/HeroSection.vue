@@ -6,7 +6,7 @@ import { Icon } from "@iconify/vue";
     <div class="hero min-h-screen pt-20 px-4 sm:px-10">
         <div class="hero-content flex-col lg:flex-row items-center gap-10">
             <img 
-                src="/imgs/profileHero11.png" 
+                src="/imgs/profile.png" 
                 alt="profile"
                 class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-cover transition-all duration-500 ease-in-out"
                 style="
