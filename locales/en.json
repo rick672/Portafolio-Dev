@@ -1,0 +1,183 @@
+{
+    "navbar": {
+        "home": "Home",
+        "projects": "Projects"
+    },
+    "hero": {
+        "title": "Hello, I'm ",
+        "disponible": "Available for Work",
+        "description": "Software developer with experience in JavaScript and Vue.js, with knowledge of backend development using PHP and Laravel. I love learning, creating clear visual interfaces and developing practical features. Always open to adopting new technologies.",
+        "accions": {
+            "contact": "Contact me",
+            "cv": "Download CV",
+            "github": "GitHub"
+        }
+    },
+    "stats": {
+        "visitas": "Visits",
+        "descriptionVisitas": "Thanks for your visit 🙌",
+        "proyectos": "Projects Done",
+        "descriptionProyectos": "Includes systems with Vue and Laravel",
+        "tecnologias": "Technologies",
+        "descriptionTecnologias": "Vue, Laravel, Tailwind..."
+    },
+    "timeline": {
+        "section": {
+            "title": "Timeline"
+        },
+        "experience": {
+            "1": {
+                "title": "Frontend Developer",
+                "date": "February - August 2022",
+                "description": "Developed a frontend system for optimizing information handling. I was responsible for maintaining IT equipment and the installation of structured cabling in different stores to improve connectivity and network performance."
+            },
+            "2": {
+                "title": "System Administrator",
+                "date": "August 2023",
+                "description": "Designed and developed a custom system for managing a condominium. Includes modules for payments, communication with co-owners, and maintenance tracking. Significantly improved organization and reduced time spent on administrative tasks."
+            },
+            "3": {
+                "title": "Sales System",
+                "date": "December 2024",
+                "description": "Designed a sales system for a food products company, allowing for the recording of transactions and the issuance of receipts through Bluetooth printing. This allowed for efficient attention to the customer and improved internal control of sales without integration with the tax system."
+            }
+        }
+    },
+    "projects": {
+        "section": {
+            "title": "Projects"
+        },
+        "project": {
+            "0": {
+                "title": "E-commerce Landing Page",
+                "description": "This project was created as part of a Frontend Mentor challenge. It features a responsive e-commerce landing page designed to adapt to various devices. The main goal was to replicate the provided design, focusing on visual details, user experience, and interaction."
+            },
+            "1": {
+                "title": "CriptoCotizador",
+                "description": "Web app built with Vue 3, Vite, and Tailwind CSS that allows users to check the real-time value of a cryptocurrency in their local currency using the CryptoCompare API. Helped me strengthen my skills in API consumption and responsive design with Tailwind CSS."
+            },
+            "2": {
+                "title": "Instagram Clone",
+                "description": "Instagram clone that allows login with Google, keeps the session active, and displays content based on user state. Includes a responsive design simulating the feed, stories, and side navigation. This project reinforces the use of Firebase and modern UI design."
+            },
+            "3": {
+                "title": "Shopping Cart with Vue",
+                "description": "Web app developed with Vue 3, Vite, and Tailwind CSS that simulates a functional shopping cart. Users can add, remove, and clear products with localStorage persistence. This project strengthens my knowledge of state management, reactivity, and reusable components in Vue."
+            },
+            "4": {
+                "title": "Rick and Morty API Explorer",
+                "description": "Project built with JavaScript, HTML, and pure CSS that consumes the public Rick and Morty API to display characters with their image, name, status, and species. Includes basic error handling and a responsive design with custom styles. Helped me practice consuming REST APIs and dynamic DOM manipulation without frameworks."
+            },
+            "5": {
+                "title": "GIF Searcher",
+                "description": "App created with Vue 3, Vite, and TailwindCSS that consumes the Giphy API to search and display GIFs and stickers. Includes dynamic search, result loading, and a responsive design. This project helped me master API integration and build modern, interactive interfaces using Vue."
+            },
+            "6": {
+                "title": "PetsLove Veterinary",
+                "description": "Web application for managing a veterinary clinic. Allows registering pets, their owners, and treatments with associated costs. Inspired by a paid video tutorial, developed from scratch without accessing the exclusive content."
+            },
+            "7": {
+                "title": "LOS PINOS – Condominium (Private)",
+                "description": "App to manage a condominium, including housing units, owners, and the number of residents per home. It allows recording shared expenses (e.g., maintenance or staff salaries), automatically dividing the cost among all owners. Tracks payments and outstanding debts. Includes a reservation system for shared areas (by date and time), and a communication system for sending notices via email or internally to specific or all residents."
+            },
+            "8": {
+                "title": "ROSABI – Sales Management (Private)",
+                "description": "Progressive Web App (PWA) for sales and collections across multiple regions. Clients are registered by city, market, and category, enabling intuitive product filtering. Generates payment receipts via Bluetooth printer connection. The system includes sales reports, debt tracking, and pending balances by customer and location. Designed for companies selling products like panettone, spices, or coffee, with easy expansion of product categories."
+            },
+            "9": {
+                "title": "Code on Rick9",
+                "description": ""
+            },
+            "10": {
+                "title": "Code on Rick10",
+                "description": ""
+            }
+        },
+        "buttons": {
+            "viewMore": "View More",
+            "back": "Back to Home",
+            "view": "Preview"
+        }
+    },
+    "about": {
+        "section": {
+            "title": "About me"
+        },
+        "me": {
+            "parrafo1": {
+                "p1": "Hello! I'm ",
+                "p1span": "Ricardo Aliaga Catari",
+                "p2": ", a ",
+                "p2span": "Frontend Developer",
+                "p3": " passionate about experience in ",
+                "p3span": "JavaScript",
+                "p4": " and ",
+                "p4span": "Vue.js",
+                "p5": ". I'm dedicated to my ",
+                "p5span": "work",
+                "p6": " and ",
+                "p6span": "responsibility",
+                "p7": " in each project, ensuring ",
+                "p7span": "quality results",
+                "p8": " and a ",
+                "p8span": "collaborative approach",
+                "p9": "."
+            },
+            "parrafo2": {
+                "p1": "I'm not afraid to ",
+                "p1span": "ask for help",
+                "p2": " when I need it, as I value ",
+                "p2span": "continuous learning",
+                "p3": " and ",
+                "p3span": "constant improvement.",
+                "p4": "In addition to my frontend experience, I also have backend skills in ",
+                "p4span": "(PHP and Laravel)"
+            },
+            "parrafo3": {
+                "p1": "As a ",
+                "p1span": "professional",
+                "p2": ", I prioritize ",
+                "p2span": "honesty",
+                "p3": " and ",
+                "p3span": "responsibility"
+            },
+            "parrafo4": {
+                "p1": "I am excited about joining a ",
+                "p1span": "dynamic team",
+                "p2": ", where I can contribute my experience, learn from others, and grow alongside my colleagues. Together, we can achieve ",
+                "p2span": "ambitious goals",
+                "p3": " and make a significant impact on every project."
+            }
+        }
+    },
+    "contact": {
+        "section": {
+            "title": "Contact"
+        },
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message or Subject",
+            "button": "Send"
+        },
+        "alert": {
+            "successTitle": "Thank you for your message!",
+            "successText": "I will get back to you as soon as possible.",
+            "errorTitle": "Oops! Something went wrong.",
+            "errorText": "Please try again.",
+            "Button": "Ok"
+        }
+    },
+    "footer": {
+        "copyright": " - Almost all rights reserved.",
+        "inspiration": "Inspired by the portfolio of ",
+        "social": {
+            "title": "Social Networks"
+        }
+    },
+    "404": {
+        "title": "Page Not Found",
+        "description": "Sorry, but it seems that the page you are looking for does not exist.",
+        "button": "Back to Home"
+    }
+}

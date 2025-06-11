@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+   themes: cupcake --default, sunset --prefersdark, dim;
+}
+ /* Personalizar "cupcake" */
+@plugin "daisyui/theme" {
+  name: "cupcake";/* opcional si quieres que sea el tema por defecto */
+  /* --color-primary: #ff5733; 
+  --color-primary-content: #ffffff; */
+    --color-primary: #F97316;    /* Warm Orange */
+    --color-secondary: #FDBA74;  /* Coral */
+    --color-accent: #FFE4B5;     /* Peach */
+    --color-base: #FFF4E6;       /* Soft Sand */
+    --color-info: #38BDF8;       /* Sky 400 */
+    --color-success: #FACC15;    /* Amber 400 */
+    --color-warning: #FB923C;    /* Orange 400 */
+    --color-error: #F87171;      /* Red 400 */
+}
+
+ /* Personalizar "sunset" */
+@plugin "daisyui/theme" {
+  name: "sunset"; /* opcional si lo usas como tema oscuro */
+  /* --color-primary: #9932CC;
+  --color-primary-content: #ffffff; */
+    --color-primary: #10B981;    /* Emerald */
+    --color-secondary: #A7F3D0;  /* Light Mint */
+    --color-accent: #BBF7D0;     /* Mint Green */
+    --color-base: #ECFDF5;       /* Soft Mint Base */
+    --color-info: #22D3EE;       /* Cyan 400 */
+    --color-success: #34D399;    /* Green 400 */
+    --color-warning: #FBBF24;    /* Amber 400 */
+    --color-error: #EF4444;      /* Red 500 */
+
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+

@@ -1,0 +1,188 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "projects": "Proyectos"
+    },
+    "hero": {
+        "title": "Hola, soy ",
+        "disponible": "Disponible para Trabajar",
+        "description": "Desarrollador de Software con experiencia en JavaScript y Vue.js, con conocimientos en desarrollo backend utilizando PHP y Laravel. Me apasiona aprender, crear interfaces visuales claras y desarrollar funcionalidades prácticas. Siempre abierto a adoptar nuevas tecnologías.",
+        "accions": {
+            "contact": "Contactame",
+            "cv": "Descargar CV",
+            "github": "GitHub"
+        }
+    },
+    "stats": {
+        "visitas": "Visitas",
+        "descriptionVisitas": "Gracias por tu visita 🙌",
+        "proyectos": "Proyectos Realizados",
+        "descriptionProyectos": "Incluye sistemas con Vue y Laravel",
+        "tecnologias": "Tecnologías",
+        "descriptionTecnologias": "Vue, Laravel, Tailwind..."
+    },
+    "timeline": {
+        "section": {
+            "title": "Trayectoria"
+        },
+        "experience": {
+            "1": {
+                "title": "Auxiliar de Sistemas",
+                "date": "Febrero - Agosto de 2021",
+                "description": "Desarrollé un sistema de gestión de clientes para optimizar el manejo de información. Fui responsable del mantenimiento de equipos informáticos y la instalación de cableado estructurado en distintas sucursales para mejorar la conectividad y el rendimiento de la red."
+            },
+            "2": {
+                "title": "Sistema de Gestión",
+                "date": "Agosto de 2023",
+                "description": "Diseñé y desarrollé un sistema personalizado para la administración de un condominio. Incluye módulos para pagos, comunicación con copropietarios y seguimiento de mantenimiento. Mejoró significativamente la organización y redujo el tiempo dedicado a tareas administrativas."
+            },
+            "3": {
+                "title": "Sistema de Ventas",
+                "date": "Diciembre de 2024",
+                "description": "Diseñé un sistema de ventas para una empresa de productos alimenticios, el cual permite registrar transacciones y emitir recibos mediante impresión Bluetooth. Esto permitió agilizar la atención al cliente y mejorar el control interno de ventas, sin integración con el sistema tributario."
+            }
+        }
+    },
+    "projects": {
+        "section": {
+            "title": "Proyectos"
+        },
+        "project": {
+            "0": {
+                "title": "E-commerce Landing Page",
+                "description": "Este proyecto fue realizado como parte de un desafío de Frontend Mentor. Consiste en una landing page de e-commerce responsiva, diseñada para adaptarse a distintos dispositivos. El objetivo principal fue replicar el diseño proporcionado, enfocándome en los detalles visuales, la experiencia del usuario y la interacción."
+            },
+            "1": {
+                "title": "CriptoCotizador",
+                "description": "App web con Vue 3, Vite y Tailwind CSS que permite consultar el valor en tiempo real de una criptomoneda en la moneda local, usando la API de CryptoCompare. Me ayudó a reforzar el consumo de APIs y diseño responsivo con Tailwind CSS."
+            },
+            "2": {
+                "title": "Instagram Clone",
+                "description": "Clon de Instagram. Permite iniciar sesión con Google, mantiene la sesión activa y muestra contenido según el estado del usuario. Incluye diseño responsive que simula feed, historias y navegación lateral. Este proyecto refuerza el uso de Firebase y el diseño de interfaces modernas."
+            },
+            "3": {
+                "title": "Carrito de Compras con Vue",
+                "description": "Aplicación web desarrollada con Vue 3, Vite y Tailwind CSS que simula un carrito de compras funcional. Permite agregar, quitar y vaciar productos, con persistencia usando localStorage. Este proyecto refuerza el manejo de estados, reactividad y componentes reutilizables en Vue."
+            },
+            "4": {
+                "title": "Rick and Morty API Explorer",
+                "description": "Proyecto en JavaScript, HTML y CSS puro que consume la API pública de Rick and Morty para mostrar personajes con su imagen, nombre, estado y especie. Incluye manejo básico de errores y diseño responsivo con estilos personalizados. Este proyecto me permitió practicar el consumo de APIs REST y manipulación dinámica del DOM sin frameworks."
+            },
+            "5": {
+                "title": "Buscador de GIFs",
+                "description": "Aplicación creada con Vue 3, Vite y TailwindCSS que consume la API de Giphy para buscar y mostrar GIFs y stickers. Incluye búsqueda dinámica, carga de resultados y diseño responsivo. Este proyecto me ayudó a dominar la integración con APIs externas y la construcción de interfaces interactivas y modernas usando Vue."
+            },
+            "6": {
+                "title": "Veterinaria PetsLove",
+                "description": "Aplicación web para gestionar una clínica veterinaria. Permite registrar mascotas, dueños y tratamientos con sus costos. Inspirado en un video de pago, desarrollado desde cero sin acceder al contenido exclusivo."
+            },
+            "7": {
+                "title": "LOS PINOS - Condominio (Privado)",
+                "description": "Aplicación para administrar un condominio, donde se gestionan las viviendas, los propietarios y la cantidad de residentes por unidad. Permite registrar gastos comunes (como mantenimiento o sueldos) y divide el monto entre todos los propietarios. Se lleva el control de pagos y deudas. También incluye la reserva de áreas comunes por fecha y hora, y un sistema de envío de comunicados (por email o internos) a uno o todos los residentes."
+            },
+            "8": {
+                "title": "ROSABI – Control de Ventas (Privado)",
+                "description": "Aplicación web progresiva (PWA) para la gestión de ventas y cobros en distintas regiones. Permite registrar clientes por ciudad, mercado y categoría, facilitando un filtrado visual e intuitivo para la selección de productos. Genera recibos de pago vía conexión Bluetooth con impresora. El sistema incluye reportes de ventas, deudas y pendientes por cliente y ubicación. Diseñado para empresas que comercializan productos como panetones, condimentos o café, permitiendo ampliar fácilmente el catálogo por categoría."
+            },
+            "9": {
+                "title": "Codigo en Rick9",
+                "description": ""
+            },
+            "10": {
+                "title": "Codigo en Rick10",
+                "description": ""
+            }
+        },
+        "buttons": {
+            "viewMore": "Ver más",
+            "back": "Volver al inicio",
+            "view": "Vista Previa"
+        }
+    },
+    "about": {
+        "section": {
+            "title": "Sobre mi"
+        },
+        "me": {
+            "parrafo1": {
+                "p1": "¡Hola! Soy ",
+                "p1span": "Ricardo Aliaga Catari",
+                "p2": ", un ",
+                "p2span": "Frontend Developer",
+                "p3": " apasionado con experiencia en ",
+                "p3span": "JavaScript",
+                "p4": " y ",
+                "p4span": "Vue.js",
+                "p5": ". Me destaco por mi ",
+                "p5span": "dedicación",
+                "p6": " y ",
+                "p6span": "responsabilidad",
+                "p7": " en cada proyecto, asegurando ",
+                "p7span": "resultados de calidad",
+                "p8": " y un ",
+                "p8span": "enfoque colaborativo",
+                "p9": "."
+            },
+            "parrafo2": {
+                "p1": "No temo ",
+                "p1span": "pedir ayuda",
+                "p2": " cuando la necesito, ya que valoro el ",
+                "p2span": "aprendizaje continuo",
+                "p3": " y la ",
+                "p3span": "mejora constante.",
+                "p4": "Además de mi experiencia en frontend, cuento con habilidades en backend ",
+                "p4span": "(PHP y Laravel)"
+            },
+            "parrafo3": {
+                "p1": "Como ",
+                "p1span": "profesional",
+                "p2": ", priorizo la ",
+                "p2span": "honestidad",
+                "p3": " y la ",
+                "p3span": "responsabilidad. "
+            },
+            "parrafo4": {
+                "p1": "Me entusiasma la idea de unirme a un ",
+                "p1span": "equipo dinámico",
+                "p2": ", donde pueda aportar mi experiencia, aprender de otros y crecer junto a mis colegas. Juntos, podemos alcanzar ",
+                "p2span": "metas ambiciosas",
+                "p3": " y lograr un impacto significativo en cada proyecto."
+            }
+        }
+    },
+    "contact": {
+        "section": {
+            "title": "Contacto"
+        },
+        "form": {
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "message": "Mensaje o asunto",
+            "button": "Enviar"
+        },
+        "alert": {
+            "successTitle": "¡Gracias por tu mensaje!",
+            "successText": "Te respondere lo antes posible.",
+            "errorTitle": "¡Ups! Algo salió mal.",
+            "errorText": "Intenta de nuevo.",
+            "Button": "Aceptar"
+        }
+    },
+    "footer": {
+        "copyright": " - Casi Todos los derechos reservados.",
+        "inspiration": "Inspirado en el portafolio de ",
+        "social": {
+            "title": "Redes Sociales"
+        }
+    },
+
+
+
+
+
+    "404": {
+        "title": "Página no encontrada",
+        "description": "Disculpa, pero parece que la página que estás buscando no existe.",
+        "button": "Volver al inicio"
+    }
+}
