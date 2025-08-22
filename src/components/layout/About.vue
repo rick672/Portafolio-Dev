@@ -79,7 +79,7 @@ import { Vue3Marquee } from 'vue3-marquee';
                                 {{ $t('hero.accions.contact') }}
                             </a>
                             <a 
-                                href="/cv.pdf" 
+                                href="/Ricardo-Aliaga-Catari-CV.pdf"
                                 download 
                                 class="btn btn-primary btn-outline hover:text-white"
                             >

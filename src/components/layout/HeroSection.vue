@@ -57,7 +57,7 @@ import { Icon } from "@iconify/vue";
                             {{ $t('hero.accions.contact') }}
                         </a>
                         <a 
-                            href="/cv.pdf" 
+                            href="/Ricardo-Aliaga-Catari-CV.pdf" 
                             download 
                             class="btn btn-ghost btn-outline"
                         >
