@@ -27,17 +27,17 @@
         },
         "experience": {
             "1": {
-                "title": "Frontend Developer",
+                "title": "IT Assistant",
                 "date": "February - August 2022",
                 "description": "Developed a frontend system for optimizing information handling. I was responsible for maintaining IT equipment and the installation of structured cabling in different stores to improve connectivity and network performance."
             },
             "2": {
-                "title": "System Administrator",
+                "title": "Full Stack Developer",
                 "date": "August 2023",
                 "description": "Designed and developed a custom system for managing a condominium. Includes modules for payments, communication with co-owners, and maintenance tracking. Significantly improved organization and reduced time spent on administrative tasks."
             },
             "3": {
-                "title": "Sales System",
+                "title": "Full Stack Developer",
                 "date": "December 2024",
                 "description": "Designed a sales system for a food products company, allowing for the recording of transactions and the issuance of receipts through Bluetooth printing. This allowed for efficient attention to the customer and improved internal control of sales without integration with the tax system."
             }

@@ -53,12 +53,21 @@ onMounted(() => {
             </template>
             <div class="px-8 max-w-3xl mx-auto">
                 <ol class="relative border-s border-gray-200 dark:border-gray-700">
-                    <TimeLine :title="$t('timeline.experience.1.title')" :date="$t('timeline.experience.1.date')"
-                        :description="$t('timeline.experience.1.description')" />
-                    <TimeLine :title="$t('timeline.experience.2.title')" :date="$t('timeline.experience.2.date')"
-                        :description="$t('timeline.experience.2.description')" />
-                    <TimeLine :title="$t('timeline.experience.3.title')" :date="$t('timeline.experience.3.date')"
-                        :description="$t('timeline.experience.3.description')" />
+                    <TimeLine 
+                        :title="$t('timeline.experience.3.title')" 
+                        :date="$t('timeline.experience.3.date')"
+                        :description="$t('timeline.experience.3.description')" 
+                    />
+                    <TimeLine 
+                        :title="$t('timeline.experience.2.title')" 
+                        :date="$t('timeline.experience.2.date')"
+                        :description="$t('timeline.experience.2.description')" 
+                    />
+                    <TimeLine 
+                        :title="$t('timeline.experience.1.title')" 
+                        :date="$t('timeline.experience.1.date')"
+                        :description="$t('timeline.experience.1.description')" 
+                    />
                 </ol>
             </div>
         </Sections>
