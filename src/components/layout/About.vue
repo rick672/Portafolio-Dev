@@ -15,7 +15,7 @@ import { Vue3Marquee } from 'vue3-marquee';
                     <!-- Imagen -->
                     <div class="p-5">
                         <img 
-                            src="/imgs/about.png"
+                            src="/imgs/about.jpg"
                             alt="Ricardo"
                             class="w-full sm-max-w-xs md:max-w-lg lg:max-w-xl rounded-lg transition-all duration-500 hover:scale-105 " 
                         />

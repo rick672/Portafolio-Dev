@@ -129,7 +129,6 @@ onMounted(() => {
                 <h2>{{ $t('about.section.title') }}</h2>
             </template>
             <div class="">
-
                 <About />
             </div>
         </Sections>
