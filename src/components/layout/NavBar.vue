@@ -84,7 +84,7 @@ const toggleTheme = () => {
 			</div>
 		</div>
 		<div class="navbar-center">
-			<RouterLink to="/" class="btn btn-ghost text-xl btn-outline-none border-none rounded">CodeInRick
+			<RouterLink to="/" class="btn btn-ghost text-xl btn-outline-none border-none rounded">RickDev
 			</RouterLink>
 		</div>
 		<div class="navbar-end">

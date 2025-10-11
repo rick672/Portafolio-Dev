@@ -1,9 +1,17 @@
 <script setup>
 import { Icon } from "@iconify/vue";
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const backgroundMask = document.getElementById('mask-bg')
+  if (backgroundMask) {
+    backgroundMask.classList.add('unlocked')
+  }
+})
 </script>
 
 <template>
-    <div class="hero min-h-screen pt-20 px-4 sm:px-10">
+    <div id="mask-bg" class="hero min-h-screen pt-20 px-4 sm:px-10 bg-mask">
         <div class="hero-content flex-col lg:flex-row items-center gap-10">
             <img 
                 src="/imgs/profile.png" 
@@ -82,3 +90,33 @@ import { Icon } from "@iconify/vue";
         </div>
     </div>
 </template>
+
+<style scoped>
+.bg-mask {
+  mask-image: url('/imgs/iconBlack.png');
+  -webkit-mask-image: url('/imgs/iconBlack.png'); /* Safari support */
+  mask-position: center 40%;
+  -webkit-mask-position: center 40%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 30px;
+  -webkit-mask-size: 30px;
+  transition: mask-size 1s ease-in-out;
+}
+
+/* Estado animado */
+.bg-mask.unlocked {
+  animation: lock-reveal 6s forwards ease-in-out;
+}
+
+@keyframes lock-reveal {
+  0% {
+    mask-size: 30px;
+    -webkit-mask-size: 30px;
+  }
+  100% {
+    mask-size: 3000vh;
+    -webkit-mask-size: 3000vh;
+  }
+}
+</style>
