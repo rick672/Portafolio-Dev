@@ -85,10 +85,18 @@
                 "description": "Progressive Web App (PWA) for sales and collections across multiple regions. Clients are registered by city, market, and category, enabling intuitive product filtering. Generates payment receipts via Bluetooth printer connection. The system includes sales reports, debt tracking, and pending balances by customer and location. Designed for companies selling products like panettone, spices, or coffee, with easy expansion of product categories."
             },
             "9": {
-                "title": "Code on Rick9",
-                "description": ""
+                "title": "Mi Bolsillo - Personal Finance Management",
+                "description": "Progressive Web App (PWA) for managing personal finances, enabling users to register income, expenses, and loans in an organized way. Allows management of relationships with people and viewing all associated financial movements. Includes an interactive dashboard with charts for financial analysis and works on any device without installation."
             },
             "10": {
+                "title": "Inventrack - Advanced Inventory System",
+                "description": "Complete system for managing products, batches, purchases, and branch locations. Controls batch expiration with automatic alerts and sends emails to suppliers with purchase order details. Includes an administrative panel with widgets for totals, recent purchases, and latest activities for real-time tracking."
+            },
+            "11": {
+                "title": "Code on Rick10",
+                "description": ""
+            },
+            "12": {
                 "title": "Code on Rick10",
                 "description": ""
             }

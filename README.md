@@ -1,4 +1,4 @@
-# 🚀 Portafolio Web - CodeinRick
+# 🚀 Portafolio Web - RickDev
 
 Este es mi portafolio personal desarrollado con **Vue 3** y **Vite**, donde muestro mis habilidades, proyectos y experiencia. El sitio es **totalmente responsive**, está disponible en **español e inglés**, y cuenta con soporte para **modo claro y oscuro**.
 

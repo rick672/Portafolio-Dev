@@ -85,10 +85,14 @@
                 "description": "Aplicación web progresiva (PWA) para la gestión de ventas y cobros en distintas regiones. Permite registrar clientes por ciudad, mercado y categoría, facilitando un filtrado visual e intuitivo para la selección de productos. Genera recibos de pago vía conexión Bluetooth con impresora. El sistema incluye reportes de ventas, deudas y pendientes por cliente y ubicación. Diseñado para empresas que comercializan productos como panetones, condimentos o café, permitiendo ampliar fácilmente el catálogo por categoría."
             },
             "9": {
-                "title": "Codigo en Rick9",
-                "description": ""
+                "title": "Mi Bolsillo - Gestión Financiera Personal",
+                "description": "Aplicación web progresiva (PWA) para manejar finanzas personales, donde los usuarios pueden registrar ingresos, gastos y préstamos de forma organizada. Permite gestionar relaciones con personas y visualizar todos los movimientos asociados. Incluye un dashboard con gráficos interactivos para análisis financiero y funciona en cualquier dispositivo sin necesidad de instalación."
             },
             "10": {
+                "title": "Inventrack - Sistema de Inventario Avanzado",
+                "description": "Sistema completo para administrar productos, lotes, compras y sucursales. Controla el vencimiento de lotes con alertas automáticas y envía correos a proveedores con los detalles de las compras realizadas. Incluye un panel administrativo con widgets de totales, últimas compras y actividades recientes para seguimiento en tiempo real."
+            },
+            "11": {
                 "title": "Codigo en Rick10",
                 "description": ""
             }

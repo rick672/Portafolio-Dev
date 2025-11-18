@@ -72,6 +72,27 @@ import ProjectSection from '@/components/ProjectSection.vue';
                 altText="CodeInRick"
                 type="Web"
             />
+            <!-- Proyecto 10  Mi BOLSILLO –   -->
+            <ProjectSection 
+                :title="$t('projects.project.9.title')"
+                :description="$t('projects.project.9.description')"
+                :technologies="['Laravel','FilamentPHP', 'Mysql', 'ChartJS', 'PWA']"
+                imgUrl="/proyectos/projectMiBolsillo.png"
+                altText="CodeInRick"
+                githubUrl="https://github.com/rick672/Ingresos-Gastos.git"
+                previewUrl="https://www.youtube.com/watch?v=478Df2eicpE&t=113s"
+                type="Web"
+            />
+            <ProjectSection 
+                :title="$t('projects.project.10.title')"
+                :description="$t('projects.project.10.description')"
+                :technologies="['Laravel', 'Bootstrap', 'Livewire', 'Mysql', 'Mailtrap', 'AdminLTE']"
+                imgUrl="/proyectos/projectAdminteInventarioDashboard.png"
+                altText="CodeInRick"
+                githubUrl="https://github.com/rick672/Sistema-Inventario.git"
+                previewUrl="https://www.youtube.com/watch?v=478Df2eicpE&t=113s"
+                type="Web"
+            />
             <!-- Boton para Volver al inicio -->
             <div class="flex justify-center">
                 <RouterLink 
