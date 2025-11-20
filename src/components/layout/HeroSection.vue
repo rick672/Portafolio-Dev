@@ -53,7 +53,7 @@ onMounted(() => {
                     <div 
                         class="flex flex-wrap gap-2 justify-center"
                     >
-                        <a 
+                        <!-- <a 
                             href="https://wa.me/59162005216?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
                             target="_blank" 
                             class="btn btn-ghost btn-outline"
@@ -63,6 +63,16 @@ onMounted(() => {
                                 class="w-6 h-6" 
                             />
                             {{ $t('hero.accions.contact') }}
+                        </a> -->
+                        <a 
+                            href="https://github.com/rick672" target="_blank" 
+                            class="btn btn-ghost btn-outline"
+                        >
+                            <Icon 
+                                icon="mdi:github" 
+                                class="w-6 h-6"
+                            />
+                            {{ $t('hero.accions.github') }}
                         </a>
                         <a 
                             href="/Ricardo-Aliaga-Catari-CV.pdf" 
@@ -73,16 +83,6 @@ onMounted(() => {
                                 icon="mdi:file-document-outline" class="w-6 h-6" 
                             />
                             {{ $t('hero.accions.cv') }}
-                        </a>
-                        <a 
-                            href="https://github.com/rick672" target="_blank" 
-                            class="btn btn-ghost btn-outline"
-                        >
-                            <Icon 
-                                icon="mdi:github" 
-                                class="w-6 h-6"
-                            />
-                            {{ $t('hero.accions.github') }}
                         </a>
                     </div>
                 </div>

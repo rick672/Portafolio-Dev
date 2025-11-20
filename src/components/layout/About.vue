@@ -67,7 +67,7 @@ import { Vue3Marquee } from 'vue3-marquee';
                                 $t('about.me.parrafo4.p3') }}
                         </p>
                         <div class="flex flex-wrap gap-2 justify-center my-8">
-                            <a 
+                            <!-- <a 
                                 href="https://wa.me/59162005216?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
                                 target="_blank" 
                                 class="btn btn-primary btn-outline hover:text-white"
@@ -77,7 +77,7 @@ import { Vue3Marquee } from 'vue3-marquee';
                                     class="w-6 h-6" 
                                 />
                                 {{ $t('hero.accions.contact') }}
-                            </a>
+                            </a> -->
                             <a 
                                 href="/Ricardo-Aliaga-Catari-CV.pdf"
                                 download 

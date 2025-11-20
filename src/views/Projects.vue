@@ -14,7 +14,7 @@ import ProjectSection from '@/components/ProjectSection.vue';
             <ProjectSection 
                 :title="$t('projects.project.3.title')"
                 :description="$t('projects.project.3.description')"
-                :technologies="['VueJs', 'Tailwind', 'Css']"
+                :technologies="['VueJs', 'Tailwind', 'Css', 'Vercel']"
                 imgUrl="/proyectos/projectStore.webp"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/Carrito-Compras"
@@ -25,7 +25,7 @@ import ProjectSection from '@/components/ProjectSection.vue';
             <ProjectSection 
                 :title="$t('projects.project.4.title')"
                 :description="$t('projects.project.4.description')"
-                :technologies="['Html', 'Css', 'Js']"
+                :technologies="['Html', 'Css', 'Js', 'Vercel']"
                 imgUrl="/proyectos/projectApiRickandMorty.webp"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/RickMorty"
@@ -36,7 +36,7 @@ import ProjectSection from '@/components/ProjectSection.vue';
             <ProjectSection 
                 :title="$t('projects.project.5.title')"
                 :description="$t('projects.project.5.description')"
-                :technologies="['VueJs', 'Tailwind', 'Daisy', 'Css']"
+                :technologies="['VueJs', 'Tailwind', 'Daisy', 'Css', 'Vercel']"
                 imgUrl="/proyectos/projectBuscadorGifs.webp"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/Buscador-Giphy"
@@ -76,11 +76,11 @@ import ProjectSection from '@/components/ProjectSection.vue';
             <ProjectSection 
                 :title="$t('projects.project.9.title')"
                 :description="$t('projects.project.9.description')"
-                :technologies="['Laravel','FilamentPHP', 'Mysql', 'ChartJS', 'PWA']"
+                :technologies="['Laravel','FilamentPHP', 'Mysql', 'ChartJS', 'PWA', 'Render']"
                 imgUrl="/proyectos/projectMiBolsillo.png"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/Ingresos-Gastos.git"
-                previewUrl="https://www.youtube.com/watch?v=478Df2eicpE&t=113s"
+                previewUrl="https://mi-bolsillo.onrender.com/"
                 type="Web"
             />
             <ProjectSection 
@@ -90,7 +90,6 @@ import ProjectSection from '@/components/ProjectSection.vue';
                 imgUrl="/proyectos/projectAdminteInventarioDashboard.png"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/Sistema-Inventario.git"
-                previewUrl="https://www.youtube.com/watch?v=478Df2eicpE&t=113s"
                 type="Web"
             />
             <!-- Boton para Volver al inicio -->

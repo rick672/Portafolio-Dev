@@ -1,5 +1,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
+import { Render } from "matter-js";
 
 const props = defineProps({
     title: {
@@ -38,6 +39,9 @@ const props = defineProps({
 
 // Mapeo de tecnologías
 const techIcons = {
+    Vercel: "ri:vercel-fill",
+    Netlify: "material-icon-theme:netlify",
+    Render: "simple-icons:render",
     ChartJS: "simple-icons:chartdotjs",
     FilamentPHP: "fluent-color:lightbulb-filament-16",
     Mailtrap: "simple-icons:mailtrap",

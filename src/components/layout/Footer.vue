@@ -51,14 +51,14 @@ let year = new Date().getFullYear()
                 >
                     <Icon icon="mdi:linkedin" class="w-8 h-8" />
                 </a>
-                <a 
+                <!-- <a 
                     href="https://wa.me/59162005216?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
                     target="_blank"
                     class="btn btn-ghost btn-circle"
                     aria-label="Whatsapp"
                 >
                     <Icon icon="mdi:whatsapp" class="w-8 h-8" />
-                </a>
+                </a> -->
                 <a
                     href="mailto:aliagaricardo321@gmail.com"
                     target="_blank"
