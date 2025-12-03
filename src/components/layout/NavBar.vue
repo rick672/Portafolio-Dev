@@ -118,8 +118,13 @@ const toggleTheme = () => {
 			<!-- toggle idioma  -->
 			<div class="flex items-center gap-2">
 				<label class="flex items-center text-xs">
-					<span class="px-2 font-semibold transition-colors duration-300"
-						:class="locale === 'en' ? 'text-primary' : ''">EN</span>
+					<!-- Bandera EN con tooltip de daisyUI -->
+					<div class="tooltip tooltip-bottom" data-tip="English (USA)">
+						<img src="/imgs/us.svg" 
+							alt="EN" 
+							class="w-5 h-3 rounded mx-1"
+							:class="locale === 'en' ? 'opacity-100' : 'opacity-50'">
+					</div>
 
 					<input 
 						type="checkbox" 
@@ -128,8 +133,13 @@ const toggleTheme = () => {
 						@change="toggleLanguage" 
 					/>
 
-					<span class="px-2 font-semibold transition-colors duration-300"
-						:class="locale === 'es' ? 'text-primary' : ''">ES</span>
+					<!-- Bandera ES con tooltip de daisyUI -->
+					<div class="tooltip tooltip-bottom" data-tip="Español (Bolivia)">
+						<img src="/imgs/bo.svg" 
+							alt="ES" 
+							class="w-5 h-3 rounded mx-1"
+							:class="locale === 'es' ? 'opacity-100' : 'opacity-50'">
+					</div>
 				</label>
 			</div>
 		</div>
