@@ -1,6 +1,10 @@
 # 🚀 Portafolio Web - RickDev
 
-Este es mi portafolio personal desarrollado con **Vue 3** y **Vite**, donde muestro mis habilidades, proyectos y experiencia. El sitio es **totalmente responsive**, está disponible en **español e inglés**, y cuenta con soporte para **modo claro y oscuro**.
+🔗 **Visita mi portafolio en línea:**  
+https://portafolio-dev-virid.vercel.app/
+
+Este es mi portafolio personal desarrollado con **Vue 3** y **Vite**, donde muestro mis habilidades, proyectos y experiencia.  
+El sitio es **totalmente responsive**, está disponible en **español e inglés**, y cuenta con soporte para **modo claro y oscuro**.
 
 ![Vista del portafolio en modo claro](./public/imgs/preview-light.png "Vista en modo claro")
 *Interfaz principal en modo claro mostrando secciones de proyectos y habilidades*
@@ -12,15 +16,15 @@ Este es mi portafolio personal desarrollado con **Vue 3** y **Vite**, donde mues
 
 ## 🚀 Características
 
-- 🌍 Multilenguaje: Español 🇪🇸 / Inglés 🇬🇧
-- 🌗 Modo claro y oscuro
-- 📱 Diseño responsive para todos los dispositivos
-- ⚡ Desarrollado con Vite y Vue 3 (Composition API)
-- 🎨 Estilizado con Tailwind CSS + DaisyUI
-- 📧 Formulario de contacto con [FormSubmit](https://formsubmit.co/)
-- 🔥 Integración con Firebase mediante VueFire
-- 🎠 Animaciones suaves con vue3-marquee
-- 🔔 Alertas elegantes usando SweetAlert2
+- 🌍 Multilenguaje: Español / Inglés  
+- 🌗 Modo claro y oscuro  
+- 📱 Diseño responsive para todos los dispositivos  
+- ⚡ Desarrollado con Vite y Vue 3 (Composition API)  
+- 🎨 Estilizado con Tailwind CSS + DaisyUI  
+- 📧 Formulario de contacto con [FormSubmit](https://formsubmit.co/)  
+- 🔥 Integración con Firebase mediante VueFire  
+- 🎠 Animaciones suaves con vue3-marquee  
+- 🔔 Alertas elegantes usando SweetAlert2  
 
 ---
 
@@ -46,7 +50,21 @@ Este es mi portafolio personal desarrollado con **Vue 3** y **Vite**, donde mues
 
 ## 🧪 Instalación del Proyecto
 
-### Instalar dependencias
-
 ```bash
+# 1️⃣ Clonar el repositorio
+git clone https://github.com/rick672/Portafolio-Dev.git
+
+# 2️⃣ Entrar en el proyecto
+cd Portafolio-Dev
+
+# 3️⃣ Instalar dependencias
 npm install
+
+# 4️⃣ Ejecutar en modo desarrollo
+npm run dev
+
+# 5️⃣ Generar build para producción
+npm run build
+
+# 6️⃣ (Opcional) Previsualizar el build
+npm run preview
