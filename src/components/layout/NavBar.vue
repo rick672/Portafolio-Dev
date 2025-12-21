@@ -29,6 +29,18 @@ const toggleTheme = () => {
 	document.documentElement.setAttribute('data-theme', currentTheme.value)
 	localStorage.setItem('theme', currentTheme.value)
 }
+// Efecto para cambiar tema
+const toggleThemeWithTransition = () => {
+	if (!document.startViewTransition) {
+		toggleTheme()
+		return
+	}
+
+	document.startViewTransition(() => {
+		toggleTheme()
+	})
+}
+
 </script>
 
 
@@ -98,7 +110,7 @@ const toggleTheme = () => {
 					<input 
 						type="checkbox" 
 						class="theme-controller" :checked="currentTheme === 'cupcake'"
-						@change="toggleTheme" 
+						@change="toggleThemeWithTransition" 
 						aria-label="Cambiar theme"
 					/>
 
