@@ -3,6 +3,21 @@ import { Icon } from "@iconify/vue";
 import { ref } from 'vue'
 
 const imageDialog = ref(null)
+const currentSlide = ref(0)
+
+const nextSlide = () => {
+  if (!props.images.length) return
+
+  currentSlide.value =
+    currentSlide.value === props.images.length - 1 ? 0 : currentSlide.value + 1
+}
+
+const prevSlide = () => {
+  if (!props.images.length) return
+
+  currentSlide.value =
+    currentSlide.value === 0 ? props.images.length - 1 : currentSlide.value - 1
+}
 
 const props = defineProps({
     title: {
@@ -152,27 +167,27 @@ const techIcons = {
             <div class="modal-box max-w-5xl bg-transparent shadow-none p-0">
 
                 <!-- ✅ GALERÍA -->
-                <div v-if="images.length" class="carousel w-full rounded-lg">
-                    <div
-                        v-for="(img, index) in images"
-                        :key="index"
-                        :id="`slide-${index}`"
-                        class="carousel-item relative w-full"
-                    >
-                        <img :src="img" class="w-full max-h-[85vh] object-contain" />
+                <div v-if="images.length" class="relative w-full rounded-lg overflow-hidden">
+                    <img
+                        :src="images[currentSlide]"
+                        class="w-full max-h-[85vh] object-contain"
+                    />
 
-                        <div class="absolute flex justify-between left-5 right-5 top-1/2">
-                            <a
-                                :href="`#slide-${index === 0 ? images.length - 1 : index - 1}`"
-                                class="btn btn-circle"
-                            >❮</a>
-                            <a
-                                :href="`#slide-${index === images.length - 1 ? 0 : index + 1}`"
-                                class="btn btn-circle"
-                            >❯</a>
-                        </div>
-                    </div>
+                    <button
+                        @click="prevSlide"
+                        class="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2"
+                    >
+                        ❮
+                    </button>
+
+                    <button
+                        @click="nextSlide"
+                        class="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2"
+                    >
+                        ❯
+                    </button>
                 </div>
+
 
                 <!-- ✅ IMAGEN ÚNICA -->
                 <img
