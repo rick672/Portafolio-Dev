@@ -2,22 +2,22 @@
 import { Icon } from "@iconify/vue";
 import { ref } from 'vue'
 
-const imageDialog = ref(null)
+const showModal = ref(false)
+
 const currentSlide = ref(0)
 
-const nextSlide = () => {
-  if (!props.images.length) return
-
+const nextSlide = (images) => {
+  if (!images.length) return
   currentSlide.value =
-    currentSlide.value === props.images.length - 1 ? 0 : currentSlide.value + 1
+    currentSlide.value === images.length - 1 ? 0 : currentSlide.value + 1
 }
 
-const prevSlide = () => {
-  if (!props.images.length) return
-
+const prevSlide = (images) => {
+  if (!images.length) return
   currentSlide.value =
-    currentSlide.value === 0 ? props.images.length - 1 : currentSlide.value - 1
+    currentSlide.value === 0 ? images.length - 1 : currentSlide.value - 1
 }
+
 
 const props = defineProps({
     title: {
@@ -122,7 +122,8 @@ const techIcons = {
                         :alt="altText" 
                         loading="lazy"
                         class="w-full cursor-pointer object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
-                        @click="imageDialog?.showModal()" />
+                        @click="showModal = true" 
+                    />
                 </div>
 
                 <!-- Contenido -->
@@ -163,47 +164,25 @@ const techIcons = {
                 </div>
             </div>    
         </div>
-        <dialog ref="imageDialog" class="modal">
-            <div class="modal-box max-w-5xl bg-transparent shadow-none p-0">
-
-                <!-- ✅ GALERÍA -->
+        <!-- MODAL DAISYUI -->
+        <div v-if="showModal" class="modal modal-open">
+            <div class="modal-box max-w-5xl bg-transparent shadow-none p-0 relative">
+                <!-- Carrusel -->
                 <div v-if="images.length" class="relative w-full rounded-lg overflow-hidden">
-                    <img
-                        :src="images[currentSlide]"
-                        class="w-full max-h-[85vh] object-contain"
-                    />
-
-                    <button
-                        @click="prevSlide"
-                        class="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2"
-                    >
-                        ❮
-                    </button>
-
-                    <button
-                        @click="nextSlide"
-                        class="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2"
-                    >
-                        ❯
-                    </button>
+                    <img :src="images[currentSlide]" class="w-full max-h-[85vh] object-contain rounded-lg" />
+                    <button @click="prevSlide(props.images)" class="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2">❮</button>
+                    <button @click="nextSlide(props.images)" class="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2">❯</button>
                 </div>
 
+                <!-- Imagen única -->
+                <img v-else :src="imgUrl" :alt="altText" class="w-full max-h-[85vh] object-contain rounded-lg" />
 
-                <!-- ✅ IMAGEN ÚNICA -->
-                <img
-                    v-else
-                    :src="imgUrl"
-                    :alt="altText"
-                    class="w-full max-h-[85vh] object-contain rounded-lg"
-                />
-
+                <!-- Botón Cerrar -->
+                <button class="btn btn-circle absolute top-2 right-2" @click="showModal = false">✕</button>
             </div>
 
-            <form method="dialog" class="modal-backdrop">
-                <button></button>
-            </form>
-        </dialog>
-
-
+            <!-- Backdrop clic para cerrar -->
+            <div class="modal-backdrop" @click="showModal = false"></div>
+        </div>
     </div>
 </template>
