@@ -1,6 +1,8 @@
 <script setup>
 import { Icon } from "@iconify/vue";
-import { Render } from "matter-js";
+import { ref } from 'vue'
+
+const imageDialog = ref(null)
 
 const props = defineProps({
     title: {
@@ -98,9 +100,10 @@ const techIcons = {
                 <div class="w-full sm:w-[90%] md:w-[60%] lg:w-1/2 transition-all duration-300 ease-in-out">
                     <img 
                         :src="imgUrl" 
-                        :alt="altText"
+                        :alt="altText" 
                         loading="lazy"
-                        class="w-full object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out" />
+                        class="w-full cursor-pointer object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
+                        @click="imageDialog?.showModal()" />
                 </div>
 
                 <!-- Contenido -->
@@ -111,10 +114,8 @@ const techIcons = {
 
                     <!-- Tecnologías -->
                     <div class="flex flex-wrap gap-2 mb-2">
-                        <span 
-                            v-for="tech in technologies" :key="tech" 
-                            class="inline-flex items-center gap-1 text-sm rounded-lg px-3 py-1.5 bg-base-100 shadow hover:bg-base-300 transition-colors duration-200"
-                        >
+                        <span v-for="tech in technologies" :key="tech"
+                            class="inline-flex items-center gap-1 text-sm rounded-lg px-3 py-1.5 bg-base-100 shadow hover:bg-base-300 transition-colors duration-200">
                             <Icon :icon="techIcons[tech]" class="w-4 h-4" />
                             <span>{{ tech }}</span>
                         </span>
@@ -141,7 +142,16 @@ const techIcons = {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
+        <dialog ref="imageDialog" class="modal">
+            <form method="dialog" class="modal-box max-w-5xl p-2 bg-transparent shadow-none">
+                <img :src="imgUrl" :alt="altText" class="w-full rounded-lg" />
+            </form>
+
+            <form method="dialog" class="modal-backdrop">
+                <button></button>
+            </form>
+        </dialog>
     </div>
 </template>
