@@ -77,7 +77,11 @@ import ProjectSection from '@/components/ProjectSection.vue';
                 :title="$t('projects.project.9.title')"
                 :description="$t('projects.project.9.description')"
                 :technologies="['Laravel','FilamentPHP', 'Mysql', 'ChartJS', 'PWA', 'Render']"
-                imgUrl="/proyectos/projectMiBolsillo.png"
+                :images="[
+                    '/proyectos/MiBolsillo/projectMiBolsillo.png',
+                    '/proyectos/MiBolsillo/projectMiBolsillo-1.png',
+                    '/proyectos/MiBolsillo/projectMiBolsillo-2.png',
+                ]"
                 altText="CodeInRick"
                 githubUrl="https://github.com/rick672/Ingresos-Gastos.git"
                 previewUrl="https://mi-bolsillo.onrender.com/"

@@ -21,6 +21,10 @@ const props = defineProps({
         type: String,
         default: ''
     },
+    images: {
+        type: Array,
+        default: () => []
+    },
     altText: {
         type: String,
         default: ''
@@ -99,7 +103,7 @@ const techIcons = {
                 <!-- Imagen -->
                 <div class="w-full sm:w-[90%] md:w-[60%] lg:w-1/2 transition-all duration-300 ease-in-out">
                     <img 
-                        :src="imgUrl" 
+                        :src="images.length ? images[0] : imgUrl"
                         :alt="altText" 
                         loading="lazy"
                         class="w-full cursor-pointer object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -145,13 +149,46 @@ const techIcons = {
             </div>    
         </div>
         <dialog ref="imageDialog" class="modal">
-            <form method="dialog" class="modal-box max-w-5xl p-2 bg-transparent shadow-none">
-                <img :src="imgUrl" :alt="altText" class="w-full rounded-lg" />
-            </form>
+            <div class="modal-box max-w-5xl bg-transparent shadow-none p-0">
+
+                <!-- ✅ GALERÍA -->
+                <div v-if="images.length" class="carousel w-full rounded-lg">
+                    <div
+                        v-for="(img, index) in images"
+                        :key="index"
+                        :id="`slide-${index}`"
+                        class="carousel-item relative w-full"
+                    >
+                        <img :src="img" class="w-full max-h-[85vh] object-contain" />
+
+                        <div class="absolute flex justify-between left-5 right-5 top-1/2">
+                            <a
+                                :href="`#slide-${index === 0 ? images.length - 1 : index - 1}`"
+                                class="btn btn-circle"
+                            >❮</a>
+                            <a
+                                :href="`#slide-${index === images.length - 1 ? 0 : index + 1}`"
+                                class="btn btn-circle"
+                            >❯</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ✅ IMAGEN ÚNICA -->
+                <img
+                    v-else
+                    :src="imgUrl"
+                    :alt="altText"
+                    class="w-full max-h-[85vh] object-contain rounded-lg"
+                />
+
+            </div>
 
             <form method="dialog" class="modal-backdrop">
                 <button></button>
             </form>
         </dialog>
+
+
     </div>
 </template>
