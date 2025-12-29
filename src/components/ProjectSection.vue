@@ -1,23 +1,9 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import { ref } from 'vue'
+import { Render } from "matter-js";
 
-const showModal = ref(false)
-
-const currentSlide = ref(0)
-
-const nextSlide = (images) => {
-  if (!images.length) return
-  currentSlide.value =
-    currentSlide.value === images.length - 1 ? 0 : currentSlide.value + 1
-}
-
-const prevSlide = (images) => {
-  if (!images.length) return
-  currentSlide.value =
-    currentSlide.value === 0 ? images.length - 1 : currentSlide.value - 1
-}
-
+const imageDialog = ref(null)
 
 const props = defineProps({
     title: {
@@ -35,10 +21,6 @@ const props = defineProps({
     imgUrl: {
         type: String,
         default: ''
-    },
-    images: {
-        type: Array,
-        default: () => []
     },
     altText: {
         type: String,
@@ -117,13 +99,9 @@ const techIcons = {
             <div class="flex flex-col lg:flex-row gap-6 justify-center items-center transition-all duration-300">
                 <!-- Imagen -->
                 <div class="w-full sm:w-[90%] md:w-[60%] lg:w-1/2 transition-all duration-300 ease-in-out">
-                    <img 
-                        :src="images.length ? images[0] : imgUrl"
-                        :alt="altText" 
-                        loading="lazy"
-                        class="w-full cursor-pointer object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
-                        @click="showModal = true" 
-                    />
+                    <img :src="imgUrl" :alt="altText" loading="lazy"
+                        class="w-full max-h-[90vh] cursor-pointer object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out"
+                        @click="imageDialog?.showModal()" />
                 </div>
 
                 <!-- Contenido -->
@@ -162,27 +140,16 @@ const techIcons = {
                         </a>
                     </div>
                 </div>
-            </div>    
-        </div>
-        <!-- MODAL DAISYUI -->
-        <div v-if="showModal" class="modal modal-open">
-            <div class="modal-box max-w-5xl bg-transparent shadow-none p-0 relative">
-                <!-- Carrusel -->
-                <div v-if="images.length" class="relative w-full rounded-lg overflow-hidden">
-                    <img :src="images[currentSlide]" class="w-full max-h-[85vh] object-contain rounded-lg" />
-                    <button @click="prevSlide(props.images)" class="btn btn-circle absolute left-5 top-1/2 -translate-y-1/2">❮</button>
-                    <button @click="nextSlide(props.images)" class="btn btn-circle absolute right-5 top-1/2 -translate-y-1/2">❯</button>
-                </div>
-
-                <!-- Imagen única -->
-                <img v-else :src="imgUrl" :alt="altText" class="w-full max-h-[85vh] object-contain rounded-lg" />
-
-                <!-- Botón Cerrar -->
-                <button class="btn btn-circle absolute top-2 right-2" @click="showModal = false">✕</button>
             </div>
-
-            <!-- Backdrop clic para cerrar -->
-            <div class="modal-backdrop" @click="showModal = false"></div>
         </div>
+        <dialog ref="imageDialog" class="modal">
+            <form method="dialog" class="modal-box max-w-5xl p-2 bg-transparent shadow-none">
+                <img :src="imgUrl" :alt="altText" class="w-full rounded-lg" />
+            </form>
+
+            <form method="dialog" class="modal-backdrop">
+                <button></button>
+            </form>
+        </dialog>
     </div>
 </template>
