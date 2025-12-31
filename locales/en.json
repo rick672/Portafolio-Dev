@@ -6,7 +6,7 @@
     "hero": {
         "title": "Hello, I'm ",
         "disponible": "Available for Work",
-        "description": "Software developer with experience in JavaScript and Vue.js, with knowledge of backend development using PHP and Laravel. I love learning, creating clear visual interfaces and developing practical features. Always open to adopting new technologies.",
+        "description": "Web Developer focused on Laravel and Vue.js, specialized in building functional and well-structured web systems by combining a solid backend with clean and efficient interfaces. I am passionate about continuous learning, improving code quality, and delivering practical solutions that create real value in every project.",
         "accions": {
             "contact": "Contact me",
             "cv": "Download CV",
@@ -109,52 +109,17 @@
     },
     "about": {
         "section": {
-            "title": "About me"
+            "title": "About Me"
         },
         "me": {
             "parrafo1": {
-                "p1": "Hello! I'm ",
-                "p1span": "Ricardo Aliaga Catari",
-                "p2": ", a ",
-                "p2span": "Frontend Developer",
-                "p3": " passionate about experience in ",
-                "p3span": "JavaScript",
-                "p4": " and ",
-                "p4span": "Vue.js",
-                "p5": ". I'm dedicated to my ",
-                "p5span": "work",
-                "p6": " and ",
-                "p6span": "responsibility",
-                "p7": " in each project, ensuring ",
-                "p7span": "quality results",
-                "p8": " and a ",
-                "p8span": "collaborative approach",
-                "p9": "."
+                "texto": "I'm <span class='font-bold text-primary'>Ricardo Aliaga Catari</span>, a web developer with a strong focus on backend using <span class='font-semibold text-base-content'>PHP and Laravel</span>, and frontend experience with <span class='font-semibold text-base-content'>Vue.js and JavaScript</span>. I have worked on developing administrative systems, sales platforms, and client management solutions, always prioritizing clarity, functionality, and code quality."
             },
             "parrafo2": {
-                "p1": "I'm not afraid to ",
-                "p1span": "ask for help",
-                "p2": " when I need it, as I value ",
-                "p2span": "continuous learning",
-                "p3": " and ",
-                "p3span": "constant improvement.",
-                "p4": "In addition to my frontend experience, I also have backend skills in ",
-                "p4span": "(PHP and Laravel)"
+                "texto": "I am characterized by responsibility, punctuality, and commitment to <span class='italic text-base-content'>continuous learning</span>. I have no problem asking for support when needed, because I firmly believe in <span class='font-semibold text-primary'>teamwork</span>."
             },
             "parrafo3": {
-                "p1": "As a ",
-                "p1span": "professional",
-                "p2": ", I prioritize ",
-                "p2span": "honesty",
-                "p3": " and ",
-                "p3span": "responsibility"
-            },
-            "parrafo4": {
-                "p1": "I am excited about joining a ",
-                "p1span": "dynamic team",
-                "p2": ", where I can contribute my experience, learn from others, and grow alongside my colleagues. Together, we can achieve ",
-                "p2span": "ambitious goals",
-                "p3": " and make a significant impact on every project."
+                "texto": "I seek to join a <span class='font-semibold text-primary'>team</span> where I can contribute my knowledge, continue strengthening my technical skills, and grow professionally by developing <span class='font-semibold text-base-content'>useful and well-structured solutions</span>."
             }
         }
     },

@@ -6,7 +6,7 @@
     "hero": {
         "title": "Hola, soy ",
         "disponible": "Disponible para Trabajar",
-        "description": "Desarrollador de Software con experiencia en JavaScript y Vue.js, con conocimientos en desarrollo backend utilizando PHP y Laravel. Me apasiona aprender, crear interfaces visuales claras y desarrollar funcionalidades prácticas. Siempre abierto a adoptar nuevas tecnologías.",
+        "description": "Desarrollador Web con enfoque en Laravel y Vue.js, especializado en crear sistemas web funcionales y bien estructurados, combinando un backend sólido con interfaces claras y eficientes. Me apasiona el aprendizaje continuo, mejorar la calidad de mi código y aportar soluciones prácticas que generen valor real en cada proyecto.",
         "accions": {
             "contact": "Contactame",
             "cv": "Descargar CV",
@@ -105,52 +105,17 @@
     },
     "about": {
         "section": {
-            "title": "Sobre mi"
+            "title": "Sobre mí"
         },
         "me": {
             "parrafo1": {
-                "p1": "¡Hola! Soy ",
-                "p1span": "Ricardo Aliaga Catari",
-                "p2": ", un ",
-                "p2span": "Frontend Developer",
-                "p3": " apasionado con experiencia en ",
-                "p3span": "JavaScript",
-                "p4": " y ",
-                "p4span": "Vue.js",
-                "p5": ". Me destaco por mi ",
-                "p5span": "dedicación",
-                "p6": " y ",
-                "p6span": "responsabilidad",
-                "p7": " en cada proyecto, asegurando ",
-                "p7span": "resultados de calidad",
-                "p8": " y un ",
-                "p8span": "enfoque colaborativo",
-                "p9": "."
+                "texto": "Soy <span class='font-bold text-primary'>Ricardo Aliaga Catari</span>, desarrollador web con mayor enfoque en backend utilizando <span class='font-semibold text-base-content'>PHP y Laravel</span>, y experiencia en frontend con <span class='font-semibold text-base-content'>Vue.js y JavaScript</span>. He trabajado en el desarrollo de sistemas administrativos, ventas y gestión de clientes, priorizando siempre la claridad, la funcionalidad y la calidad del código."
             },
             "parrafo2": {
-                "p1": "No temo ",
-                "p1span": "pedir ayuda",
-                "p2": " cuando la necesito, ya que valoro el ",
-                "p2span": "aprendizaje continuo",
-                "p3": " y la ",
-                "p3span": "mejora constante.",
-                "p4": "Además de mi experiencia en frontend, cuento con habilidades en backend ",
-                "p4span": "(PHP y Laravel)"
+                "texto": "Me caracterizo por la responsabilidad, la puntualidad y el compromiso con el <span class='italic text-base-content'>aprendizaje continuo</span>. No tengo problema en pedir apoyo cuando lo necesito, porque creo firmemente en el <span class='font-semibold text-primary'>trabajo en equipo</span>."
             },
             "parrafo3": {
-                "p1": "Como ",
-                "p1span": "profesional",
-                "p2": ", priorizo la ",
-                "p2span": "honestidad",
-                "p3": " y la ",
-                "p3span": "responsabilidad. "
-            },
-            "parrafo4": {
-                "p1": "Me entusiasma la idea de unirme a un ",
-                "p1span": "equipo dinámico",
-                "p2": ", donde pueda aportar mi experiencia, aprender de otros y crecer junto a mis colegas. Juntos, podemos alcanzar ",
-                "p2span": "metas ambiciosas",
-                "p3": " y lograr un impacto significativo en cada proyecto."
+                "texto": "Busco formar parte de un <span class='font-semibold text-primary'>equipo</span> donde pueda aportar mis conocimientos, seguir fortaleciendo mis habilidades técnicas y crecer profesionalmente desarrollando <span class='font-semibold text-base-content'>soluciones útiles y bien estructuradas</span>."
             }
         }
     },
