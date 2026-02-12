@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from '@/components/layout/NavBar.vue'
 import Footer from '@/components/layout/Footer.vue'
+import ChatAssistant from './components/ChatAssistant.vue';
 
 </script>
 
@@ -18,6 +19,7 @@ import Footer from '@/components/layout/Footer.vue'
         <footer class="sticky bottom-0 z-10">
             <Footer />
         </footer>
+        <ChatAssistant />
     </div>
 </template>
 
