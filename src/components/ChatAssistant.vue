@@ -49,7 +49,7 @@
             </div>
 
             <!-- Contenedor SCROLLEABLE - solo esto se mueve -->
-            <div class="p-4 bg-base-100 max-h-[70vh] overflow-y-auto">
+            <div class="p-4 bg-base-100 max-h-[60vh] overflow-y-auto">
                 <div class="text-center space-y-2">
                     <p class="text-3xl font-bold text-base-content">
                         Hola 👋
