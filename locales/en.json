@@ -141,6 +141,36 @@
             "Button": "Ok"
         }
     },
+    "assistant": {
+        "button": {
+            "label": "Talk to me"
+        },
+        "header": {
+            "greeting": "Hi 👋",
+            "introText": "I'm",
+            "brandName": "RickDev",
+            "description": "I'm ready to answer your questions."
+        },
+        "quickQuestions": {
+            "technologies": "What technologies do you use?",
+            "projects": "Can I see your projects?",
+            "contact": "How can I contact you?",
+            "experience": "What is your experience?"
+        },
+        "responses": {
+            "technologies": "I work in both backend (Laravel, PHP) and frontend (Vue, React, JavaScript). For styling, I use Tailwind and Bootstrap, and I work with SQL databases. I also develop admin panels using Filament in Laravel. I adapt based on the project's needs.",
+            "projects": "I have worked on several projects that you can see in the \"Projects\" section. Some are personal and others are for clients. If any catches your interest, I can share more details.",
+            "contact": {
+                "title": "💡 Need help with a project or advice for an idea?",
+                "description": "✨ Mention that you contacted me through the portfolio and I’ll give you a free consultation."
+            },
+            "experience": "I have over 2 years of experience developing web applications, both as a freelancer and as part of development teams."
+        },
+        "actions": {
+            "restart": "Ask another question"
+        },
+        "footer": "I'm always working on new projects 😉 If something changes, you'll see it first in the portfolio."
+    },
     "footer": {
         "copyright": " - Almost all rights reserved.",
         "inspiration": "Inspired by the portfolio of ",

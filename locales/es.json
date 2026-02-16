@@ -137,6 +137,36 @@
             "Button": "Aceptar"
         }
     },
+    "assistant": {
+        "button": {
+            "label": "Habla conmigo"
+        },
+        "header": {
+            "greeting": "Hola 👋",
+            "introText": "Soy",
+            "brandName": "RickDev",
+            "description": "Estoy listo para responder tus preguntas."
+        },
+        "quickQuestions": {
+            "technologies": "¿Qué tecnologías manejas?",
+            "projects": "¿Puedo ver tus proyectos?",
+            "contact": "¿Cómo contactarte?",
+            "experience": "¿Cuál es tu experiencia?"
+        },
+        "responses": {
+            "technologies": "Trabajo tanto en backend (Laravel, PHP) como en frontend (Vue, React, JavaScript). Para estilos utilizo Tailwind y Bootstrap, y manejo bases de datos SQL. También desarrollo paneles administrativos con Filament en Laravel. Me adapto según las necesidades del proyecto.",
+            "projects": "He trabajado en varios proyectos que puedes ver en la sección \"Proyectos\". Algunos son personales y otros para clientes. Si alguno te interesa, puedo contarte más detalles.",
+            "contact": {
+                "title": "💡 ¿Necesitas ayuda con un proyecto o asesoría para una idea?",
+                "description": "✨ Menciona que me contactaste desde el portafolio y te regalo una asesoría gratuita."
+            },
+            "experience": "Tengo más de 2 años de experiencia desarrollando aplicaciones web, tanto como freelancer como formando parte de equipos de desarrollo."
+        },
+        "actions": {
+            "restart": "Hacer otra pregunta"
+        },
+        "footer": "Siempre estoy trabajando en nuevos proyectos 😉 Si algo cambia, lo verás primero en el portafolio."
+    },
     "footer": {
         "copyright": " - Casi Todos los derechos reservados.",
         "inspiration": "Inspirado en el portafolio de ",
@@ -144,11 +174,6 @@
             "title": "Redes Sociales"
         }
     },
-
-
-
-
-
     "404": {
         "title": "Página no encontrada",
         "description": "Disculpa, pero parece que la página que estás buscando no existe.",

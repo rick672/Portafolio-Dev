@@ -2,17 +2,18 @@
     <!-- Botón simple flotante -->
     <button @click="toggleChat" class="fixed bottom-6 right-6 z-50 group">
         <div class="
-            relative flex items-center
-            h-16
-            w-16 hover:w-50
-            px-2
-            transition-all duration-300 ease-in-out
-            overflow-hidden
-            rounded-full
-            bg-base-100
-            border border-base-200
-            shadow-md
-            cursor-pointer">
+                relative flex items-center
+                h-16
+                w-16 hover:w-auto
+                pl-2 pr-4
+                transition-all duration-300 ease-in-out
+                overflow-hidden
+                rounded-full
+                bg-base-100
+                border border-base-200
+                shadow-md
+                cursor-pointer"
+        >
 
             <!-- Ícono -->
             <div class="flex items-center justify-center w-12 h-12 shrink-0">
@@ -26,8 +27,8 @@
 
             <!-- Texto -->
             <span
-                class="ml-2 whitespace-nowrap text-md font-medium text-base-content opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                Habla conmigo
+                class="ml-2 whitespace-nowrap text-md font-medium text-base-content opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                {{ $t('assistant.button.label') }}
             </span>
         </div>
     </button>
@@ -52,22 +53,25 @@
             <div class="p-4 bg-base-100 max-h-[60vh] overflow-y-auto">
                 <div class="text-center space-y-2">
                     <p class="text-3xl font-bold text-base-content">
-                        Hola 👋
+                        {{ $t('assistant.header.greeting') }}
                     </p>
 
                     <p class="text-base-content/80 text-lg">
-                        Soy <span class="font-semibold">RickDev</span>
+                        {{ $t('assistant.header.introText') }}
+                        <span class="font-semibold">
+                            {{ $t('assistant.header.brandName') }}
+                        </span>
                     </p>
 
                     <p class="text-base-content/70 text-sm">
-                        Estoy listo para responderte.
+                        {{ $t('assistant.header.description') }}
                     </p>
                 </div>
 
                 <!-- Preguntas rápidas - estilo más simple -->
                 <div v-if="messages.length === 0" class="space-y-2 mt-4">
                     <button v-for="(question, index) in quickQuestions" :key="index"
-                        @click="sendQuickQuestion(question.question)" class="w-full text-left p-3 rounded-lg 
+                        @click="sendQuickQuestion(question.key)" class="w-full text-left p-3 rounded-lg 
                     bg-base-100 hover:bg-base-200 
                     transition-all duration-200 
                     hover:translate-x-1 hover:shadow-md
@@ -103,11 +107,8 @@
                             <div v-else-if="msg.response.type === 'stack'"
                                 class="inline-block px-5 py-4 bg-base-300 text-base-content rounded-2xl max-w-xs space-y-4">
 
-                                <p class="text-sm leading-relaxed">
-                                    Trabajo tanto backend (Laravel, PHP) como frontend (Vue, React, JavaScript). Para
-                                    estilos uso Tailwind/Bootstrap y manejo bases de datos SQL. También desarrollo
-                                    paneles administrativos con Filament en Laravel. Me adapto según necesidades del
-                                    proyecto.
+                                <p class="leading-relaxed">
+                                    {{ $t('assistant.responses.technologies') }}
                                 </p>
 
                                 <!-- Iconos -->
@@ -149,7 +150,9 @@
                             <div v-else-if="msg.response.type === 'contact'"
                                 class="inline-block px-5 py-4 bg-base-300 text-base-content rounded-2xl max-w-xs space-y-3">
 
-                                <p class="text-sm font-medium">💡 ¿Necesitas ayuda con un proyecto o asesoría para una idea? ¡Contáctame por:</p>
+                                <p class="text-sm font-medium">
+                                    {{ $t('assistant.responses.contact.title') }}
+                                </p>
 
                                 <div class="flex justify-around items-center py-2">
                                     <a :href="msg.response.data.whatsapp" target="_blank"
@@ -172,7 +175,7 @@
                                 </div>
 
                                 <p class="text-xs text-center text-base-content/60 italic">
-                                    ✨ Menciona que me contactaste por el portafolio y te regalo una asesoría gratuita
+                                    {{ $t('assistant.responses.contact.description') }}
                                 </p>
                             </div>
                         </div>
@@ -189,14 +192,13 @@
                     <div v-if="messages.length > 0 && !isTyping" class="mt-5 flex justify-center">
                         <button @click="messages = []" class="text-xs uppercase tracking-wide text-base-content/60 
            hover:text-primary transition">
-                            Hacer otra pregunta
+                            {{ $t('assistant.actions.restart') }}
                         </button>
                     </div>
                 </div>
                 <div class="mt-6 text-center">
                     <p class="text-[11px] text-base-content/40">
-                        Siempre estoy trabajando en nuevos proyectos 😉
-                        Si algo cambia, lo verás primero en el portafolio.
+                        {{ $t('assistant.footer') }}
                     </p>
                 </div>
             </div>
@@ -205,38 +207,28 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { Icon } from '@iconify/vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n()
 
 
 const isOpen = ref(false)
 const isTyping = ref(false)
 const messages = ref([])
 
-const quickQuestions = [
-    { label: '¿Qué tecnologías manejas?', question: 'tecnologias' },
-    { label: '¿Puedo ver tus proyectos?', question: 'proyectos' },
-    { label: '¿Cómo contactarte?', question: 'contacto' },
-    { label: '¿Cuál es tu experiencia?', question: 'experiencia' }
-]
+const quickQuestions = computed(() => {
+    const questions = tm('assistant.quickQuestions')
 
-const responses = {
-    'tecnologias': {
-        type: 'stack'
-    },
+    return Object.keys(questions).map(key => ({
+        key,
+        label: questions[key]
+    }))
+})
 
-    'proyectos': 'He trabajado en varios proyectos que puedes ver en la sección "Proyectos". Algunos son personales, otros para clientes. Si algo te interesa, puedo contarte más.',
-    'contacto': {
-        type: 'contact',
-        data: {
-            whatsapp: 'https://wa.me/59165181877?text=Hola%20Rick,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar',
-            linkedin: 'https://www.linkedin.com/in/codeinrick',
-            email: 'aliagaricardo321@email.com'
-        }
-    },
-    'experiencia': 'Tengo experiencia desarrollando aplicaciones web por más de 2 años, tanto como freelancer como en equipos de desarrollo.',
-    'default': 'Puedes preguntarme sobre mis habilidades, proyectos anteriores o cómo contactarme para colaborar.'
-}
+
+const responses = computed(() => tm('assistant.responses'))
 
 const toggleChat = () => {
     isOpen.value = !isOpen.value
@@ -249,24 +241,44 @@ const closeChat = () => {
     isOpen.value = false
 }
 
-const sendQuickQuestion = (questionKey) => {
-    // Agregar pregunta
+const sendQuickQuestion = (key) => {
     messages.value.push({
-        text: quickQuestions.find(q => q.question === questionKey)?.label || questionKey,
+        text: t(`assistant.quickQuestions.${key}`),
         response: null
     })
 
-    // Mostrar typing
     isTyping.value = true
 
-    // Responder después de delay
     setTimeout(() => {
-        const lastIndex = messages.value.length - 1
-        const response = responses[questionKey] || responses['default']
+        const lastMessage = messages.value[messages.value.length - 1]
 
-        messages.value[lastIndex].response = response
+        let responseData = null
+
+        // 🔹 Caso tecnologías (stack visual)
+        if (key === 'technologies') {
+            responseData = { type: 'stack' }
+        }
+
+        // 🔹 Caso contacto (estructura especial)
+        else if (key === 'contact') {
+            responseData = {
+                type: 'contact',
+                data: {
+                    whatsapp: 'https://wa.me/59165181877?text=Hola%20Rick,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar',
+                    linkedin: 'https://www.linkedin.com/in/codeinrick',
+                    email: 'aliagaricardo321@email.com'
+                }
+            }
+        }
+
+        // 🔹 Respuestas normales (desde i18n)
+        else {
+            responseData = responses.value[key] || t('assistant.responses.default')
+        }
+
+        lastMessage.response = responseData
         isTyping.value = false
-    }, 800)
+    }, 1000)
 }
 </script>
 
