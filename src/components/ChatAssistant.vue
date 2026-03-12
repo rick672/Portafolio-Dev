@@ -266,7 +266,7 @@ const sendQuickQuestion = (key) => {
                 data: {
                     whatsapp: 'https://wa.me/59165181877?text=Hola%20Rick,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar',
                     linkedin: 'https://www.linkedin.com/in/codeinrick',
-                    email: 'aliagaricardo321@email.com'
+                    email: 'aliagaricardo321@gmail.com'
                 }
             }
         }
